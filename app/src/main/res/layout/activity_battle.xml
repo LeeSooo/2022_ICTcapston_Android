@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".BattleActivity"
     android:fillViewport="true">
-<!-- 대결신청 레이아웃 큰틀! -->
+    <!-- 대결신청 레이아웃 큰틀! -->
 
     <LinearLayout
         android:id="@+id/ll_battlelayout"
@@ -82,7 +82,7 @@
             android:text="대결하기" />
     </LinearLayout>
 
-        <!-- 대결현황 레이아웃 큰틀! -->
+    <!-- 대결현황 레이아웃 큰틀! -->
 
     <LinearLayout
         android:id="@+id/ll_resultlayout"
@@ -102,7 +102,7 @@
             android:textSize="10pt"
             android:elevation="10dp"/>
 
-            <!-- 대결 일정 정보-->
+        <!-- 대결 일정 정보-->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="693dp"
@@ -226,14 +226,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
                         android:text="나의 진행상황"
                         android:textSize="8pt"
                         android:textStyle="bold" />
@@ -243,8 +243,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
                         android:background="@drawable/radius_back4_gray"
                         android:backgroundTint="@color/bg_white"
                         android:elevation="10dp"
@@ -276,12 +274,20 @@
                             app:egLegendHeight="40dp" />
                     </LinearLayout>
 
+                </LinearLayout>
+                <!-- 상대방의 진행상황 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
                         android:text="상대방 진행상황"
                         android:textSize="8pt"
                         android:textStyle="bold" />
@@ -293,8 +299,6 @@
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/radius_back4_gray"
                         android:backgroundTint="@color/bg_white"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
                         android:elevation="10dp"
                         android:orientation="vertical">
 
@@ -321,65 +325,24 @@
                             app:egLegendHeight="40dp" />
                     </LinearLayout>
 
-                    <!-- 채팅으로 이동하는 버튼
+                    <!-- 채팅으로 이동하는 버튼 -->
                     <Button
                         android:id="@+id/chatBattleBtn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="채팅대결"/>-->
+                        android:text="채팅대결"/>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="400dp"
-                        android:orientation="vertical"
-                        android:background="@color/bg_gray">
-                        <!--<TextView
-                            android:id="@+id/chatView"
-                            android:layout_width="match_parent"
-                            android:layout_height="300dp"
-                            android:layout_marginTop="30dp"
-                            android:background="@color/bg_blue"
-                            android:text="채팅 창"
-                            android:textColor="@color/white" />-->
-
-                        <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/chatRecyclerView"
-                            android:layout_width="match_parent"
-                            android:layout_height="300dp">
-                        </androidx.recyclerview.widget.RecyclerView>
-
-                        <!-- 입력버튼 레이아웃 -->
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-                            <EditText
-                                android:id="@+id/message"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint=" Enter message"
-                                android:layout_marginRight="5dp"
-                                android:paddingLeft="5dp"
-                                android:layout_weight="1"/>
-
-                            <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/chatbutton"
-                                android:text="전송"/>
-                        </LinearLayout>
-                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
 </LinearLayout>
     <!--            <com.github.mikephil.charting.charts.BarChart-->
-<!--                android:id="@+id/tab1_chart_2"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="300dp"-->
-<!--                android:layout_marginLeft="20dp"-->
-<!--                android:layout_marginRight="20dp"/>-->
+    <!--                android:id="@+id/tab1_chart_2"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="300dp"-->
+    <!--                android:layout_marginLeft="20dp"-->
+    <!--                android:layout_marginRight="20dp"/>-->
 
 
 
