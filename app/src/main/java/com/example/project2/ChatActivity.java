@@ -63,12 +63,12 @@ public class ChatActivity extends AppCompatActivity {
     protected void onStop() {
         Log.d("onStop","onStop함수 실행됨..");
         super.onStop();
-//        try {
-//            sendWriter.close();
-//            socket.close();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            sendWriter.close();
+            socket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -96,7 +96,7 @@ public class ChatActivity extends AppCompatActivity {
                 if(userInfo[0] == null || userInfo[0].getId() == null || userInfo[0].getId().length() == 0 || userInfo[0].equals(null))
                     UserID = "아이디 에러";
                 else {
-                    UserID = userInfo[0].getId();
+                    UserID = userInfo[0].getName();
                     textView.setText(UserID);
                 }
             }
