@@ -43,7 +43,7 @@ public class ChatActivity extends AppCompatActivity {
     PrintWriter sendWriter;
     private String ip = "172.20.10.2";
     private int port = 7000;
-
+//~
     TextView textView;
     String UserID;
     Button connectbutton;
